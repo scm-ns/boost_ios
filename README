@@ -1,0 +1,15 @@
+This repo will hold the code to get the boost libraries working on iOS devices. 
+
+For now this repo is based off of : 
+    https://github.com/danoli3/ofxiOSBoost
+
+I will have this repo, added as a submodule to the iOS project, and make changes in this 
+project when I move towards a better boost build. 
+
+The library that I am linking aganist the libboost.a is huge. It is 79MB.
+    I need to use the bcp tool to select the parts of boost that I need. 
+    But for the beta this is good enough. 
+
+
+
+

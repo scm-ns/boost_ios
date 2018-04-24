@@ -10,6 +10,14 @@ The library that I am linking aganist the libboost.a is huge. It is 79MB.
     I need to use the bcp tool to select the parts of boost that I need. 
     But for the beta this is good enough. 
 
+For the apple's ENABLE_BITECODE FLAG to work with boost, you have to run the build scrip 
+	with Bitcode in its name. 
+	The binary that this produces is 230 MB, so, can't store it on github. 
+	TODO: The current way of handling boost including the whole project will not work for the 
+	production app. 
 
 
+Note : There will be erros with the build scrips if the xcode-select path is not set corrently. 
+Do this if the project is to work : 
+sudo xcode-select --switch /Applications/Xcode.app
 

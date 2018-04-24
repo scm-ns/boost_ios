@@ -16,8 +16,12 @@ For the apple's ENABLE_BITECODE FLAG to work with boost, you have to run the bui
 	TODO: The current way of handling boost including the whole project will not work for the 
 	production app. 
 
-
 Note : There will be erros with the build scrips if the xcode-select path is not set corrently. 
 Do this if the project is to work : 
 sudo xcode-select --switch /Applications/Xcode.app
+
+So to get the right binary for linking with an enable bitcode, run the build script with bitcode in its
+filename. 
+
+The library will be included to the project by the build target settings of xcode 
 
